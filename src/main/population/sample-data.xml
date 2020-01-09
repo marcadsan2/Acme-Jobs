@@ -621,7 +621,7 @@
 	<!-- Commercial Banner -->
 
 	<bean id="commercialbanner01" class="acme.entities.banners.CommercialBanner">
-		<property name="imageurl" value="http://www.imagenes1.com" />
+		<property name="imageurl" value="https://i.imgur.com/2eVF1HG.png" />
 		<property name="slogan" value="Slogan del banner comercial 01" />
 		<property name="targeturl" value="http://www.targerurl01.com" />
 		<property name="sponsor" ref="Sponsor1" />
@@ -629,12 +629,56 @@
 	</bean>
 
 	<bean id="commercialbanner02" class="acme.entities.banners.CommercialBanner">
-		<property name="imageurl" value="http://www.imagenes1.com" />
+		<property name="imageurl" value="https://i.imgur.com/fihihcF.png" />
 		<property name="slogan" value="Slogan del banner comercial 02" />
 		<property name="targeturl" value="http://www.targerurl01.com" />
 		<property name="sponsor" ref="Sponsor2" />
 		<property name="creditCard" ref="creditcard02"/>
 	</bean>
+	
+	<bean id="commercialbanner03" class="acme.entities.banners.CommercialBanner">
+		<property name="imageurl" value="https://i.imgur.com/8YcXhS0.png" />
+		<property name="slogan" value="Slogan del banner comercial 03" />
+		<property name="targeturl" value="http://www.targerurl01.com" />
+		<property name="sponsor" ref="Sponsor2" />
+		<property name="creditCard" ref="creditcard02"/>
+	</bean>
+	
+	<bean id="commercialbanner04" class="acme.entities.banners.CommercialBanner">
+		<property name="imageurl" value="https://i.imgur.com/2eVF1HG.png" />
+		<property name="slogan" value="Slogan del banner comercial 03" />
+		<property name="targeturl" value="http://www.targerurl01.com" />
+		<property name="sponsor" ref="Sponsor2" />
+		<property name="creditCard" ref="creditcard02"/>
+	</bean>
+	
+	<bean id="commercialbanner05" class="acme.entities.banners.CommercialBanner">
+		<property name="imageurl" value="https://i.imgur.com/MtBRoNP.png" />
+		<property name="slogan" value="Slogan del banner comercial 03" />
+		<property name="targeturl" value="http://www.targerurl01.com" />
+		<property name="sponsor" ref="Sponsor2" />
+		<property name="creditCard" ref="creditcard02"/>
+	</bean>
+	
+	<bean id="commercialbanner06" class="acme.entities.banners.CommercialBanner">
+		<property name="imageurl" value="https://i.imgur.com/NGLSjk6.png" />
+		<property name="slogan" value="Slogan del banner comercial 03" />
+		<property name="targeturl" value="http://www.targerurl01.com" />
+		<property name="sponsor" ref="Sponsor2" />
+		<property name="creditCard" ref="creditcard02"/>
+	</bean>
+	
+	<bean id="commercialbanner07" class="acme.entities.banners.CommercialBanner">
+		<property name="imageurl" value="https://i.imgur.com/fihihcF.png" />
+		<property name="slogan" value="Slogan del banner comercial 03" />
+		<property name="targeturl" value="http://www.targerurl01.com" />
+		<property name="sponsor" ref="Sponsor2" />
+		<property name="creditCard" ref="creditcard02"/>
+	</bean>
+	
+		
+	
+	
 	
 	<!-- Credit Card -->
 	
@@ -681,7 +725,7 @@
 	<!-- Non Commercial Banner -->
 
 	<bean id="noncommercialbanner01" class="acme.entities.banners.NonCommercialBanner">
-		<property name="imageurl" value="http://www.imagenesnocomerciales1.com" />
+		<property name="imageurl" value="https://i.imgur.com/fihihcF.png" />
 		<property name="slogan" value="Slogan del banner no comercial 01" />
 		<property name="targeturl" value="http://www.targerurlnocomercial01.com" />
 		<property name="sponsor" ref="Sponsor1" />
@@ -689,7 +733,7 @@
 	</bean>
 
 	<bean id="noncommercialbanner02" class="acme.entities.banners.NonCommercialBanner">
-		<property name="imageurl" value="http://www.imagenesnocomerciales2.com" />
+		<property name="imageurl" value="https://i.imgur.com/NGLSjk6.png" />
 		<property name="slogan" value="Slogan del banner no comercial 02" />
 		<property name="targeturl" value="http://www.targerurlnocomercial02.com" />
 		<property name="sponsor" ref="Sponsor2" />
@@ -697,7 +741,7 @@
 	</bean>
 
 	<bean id="noncommercialbanner03" class="acme.entities.banners.NonCommercialBanner">
-		<property name="imageurl" value="http://www.imagenesnocomerciales3.com" />
+		<property name="imageurl" value="https://i.imgur.com/MtBRoNP.png" />
 		<property name="slogan" value="Slogan del banner no comercial 03" />
 		<property name="targeturl" value="http://www.targerurlnocomercial03.com" />
 		<property name="sponsor" ref="Sponsor1" />
