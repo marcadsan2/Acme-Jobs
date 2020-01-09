@@ -21,3 +21,5 @@ authenticated.request.form.label.deadline = Fecha Límite
 authenticated.request.form.label.description = Descripción
 authenticated.request.form.label.reward = Recompensa
 authenticated.request.form.label.ticker = Ticker
+
+authenticated.form.button.return = Volver

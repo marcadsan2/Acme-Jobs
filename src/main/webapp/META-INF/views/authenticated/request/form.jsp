@@ -23,5 +23,5 @@
 	<acme:form-textbox code="authenticated.request.form.label.reward" path="reward"/>
 	<acme:form-textbox code="authenticated.request.form.label.ticker" path="ticker"/>
 	
-	<acme:form-return code="authenticated.provider.form.button.return"/>
+	<acme:form-return code="authenticated.form.button.return"/>
 </acme:form>
