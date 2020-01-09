@@ -3,7 +3,7 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:form readonly="true">
+<acme:form>
 <acme:form-integer code="worker.jobApplication.form.label.referenceNumber" path="referenceNumber"/>
 <jstl:if test="${command != 'create' }">
 <acme:form-moment code="worker.jobApplication.form.label.creationMoment" path="creationMoment" readonly="true"/>

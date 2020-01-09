@@ -5,6 +5,7 @@
 
 
 <acme:form >
+<jstl:if test="${status != 'published' }">
 <acme:form-integer placeholder="EEEE-JJJJ" code="employer.job.form.label.referenceNumber" path="referenceNumber"/>
 <jstl:if test="${command != 'create' }">
  <acme:form-textbox readonly="true" code="employer.job.form.label.status" path="status"/>
@@ -14,6 +15,19 @@
 <acme:form-double code="employer.job.form.label.salary" path="salary"/>
 <acme:form-textbox code="employer.job.form.label.moreInfo" path="moreInfo"/>
 <acme:form-textarea code="employer.job.form.label.description" path="description"/>
+</jstl:if>
+
+<jstl:if test="${status == 'published' }">
+<acme:form-integer placeholder="EEEE-JJJJ" code="employer.job.form.label.referenceNumber" path="referenceNumber" readonly="true"/>
+<jstl:if test="${command != 'create' }">
+ <acme:form-textbox readonly="true" code="employer.job.form.label.status" path="status"/>
+</jstl:if>
+<acme:form-textbox code="employer.job.form.label.title" path="title" readonly="true"/>
+<acme:form-moment code="employer.job.form.label.deadline" path="deadline" readonly="true"/>
+<acme:form-double code="employer.job.form.label.salary" path="salary" readonly="true"/>
+<acme:form-textbox code="employer.job.form.label.moreInfo" path="moreInfo" readonly="true"/>
+<acme:form-textarea code="employer.job.form.label.description" path="description" readonly="true"/>
+</jstl:if>
 
 
 <acme:form-submit code="employer.duty.form.button.addDuty" 
