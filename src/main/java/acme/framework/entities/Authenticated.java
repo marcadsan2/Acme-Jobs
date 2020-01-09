@@ -34,9 +34,9 @@ public class Authenticated extends UserRole {
 
 	/*
 	 * @NotNull
-	 * 
+	 *
 	 * @Valid
-	 * 
+	 *
 	 * @ManyToMany(mappedBy = "users")
 	 * private Collection<MessageThread> messageThreads;
 	 */
