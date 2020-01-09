@@ -1,0 +1,8 @@
+autheticated.messagethread.form.noMoreUsers = No hay más usuarios que puedan ser añadidos al hilo
+authenticated.messagethread.form.usersToAdd = Seleccione el usuario a añadir
+autheticated.messagethread.form.button.addUser = Añadir Usuario
+
+autheticated.messagethread.form.noMoreUsersToRemove = No hay más usuarios que puedan ser borrados del hilo
+authenticated.messagethread.form.usersToRemove = Seleccione el usuario a eliminar
+autheticated.messagethread.form.button.deleteUser = Eliminar usuario
+autheticated.messagethread.form.button.return = Volver

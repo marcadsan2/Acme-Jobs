@@ -1,0 +1,20 @@
+employer.jobApplication.list.label.referenceNumber = Numero de referencia
+employer.jobApplication.list.label.qualifications = Titulos
+employer.jobApplication.list.label.jobTitle = Titulo del trabajo
+employer.jobApplication.list.label.status = Estado
+employer.jobApplication.list.label.creationMoment = Momento de creación
+
+employer.jobApplication.form.label.referenceNumber = Numero de referencia
+employer.jobApplication.form.label.creationMoment = Momento de creacion
+employer.jobApplication.form.label.status = Estado
+employer.jobApplication.form.label.statement = Declaracion
+employer.jobApplication.form.label.skills = Habilidades
+employer.jobApplication.form.label.qualifications = Titulos
+employer.jobApplication.form.label.justification = Justificación
+employer.job.message.job = Ver el trabajo solicitado
+
+employer.jobApplication.form.button.accept = Aceptarla
+employer.jobApplication.form.button.reject = Rechazarla
+employer.jobApplication.error.justification = Debes justificar por qué la estas rechazando (La justificación no puede estar vacía)
+
+autheticated.jobApplication.form.button.return = Volver

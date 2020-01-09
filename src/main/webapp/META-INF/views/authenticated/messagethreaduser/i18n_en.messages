@@ -1,0 +1,8 @@
+autheticated.messagethread.form.noMoreUsers = There are no more users that can be added to the thread
+authenticated.messagethread.form.usersToAdd = Select the user to add
+autheticated.messagethread.form.button.addUser = Add User
+
+autheticated.messagethread.form.noMoreUsersToRemove = There are no more users that can be removed from the thread
+authenticated.messagethread.form.usersToRemove = Select the user to remove
+autheticated.messagethread.form.button.deleteUser = Remove user
+autheticated.messagethread.form.button.return = Return

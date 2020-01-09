@@ -1,0 +1,10 @@
+authenticated.auditor-request.form.label.firm = Firm
+authenticated.auditor-request.form.label.statement = Responsability Statement
+
+authenticated.auditor-request.requested.error = Your request is being revised
+
+authenticated.auditor-request.form.label.create = Create
+authenticated.auditor-request.form.label.return = Return
+
+authenticated.auditrequest.error.firm.spam = The firm is considered spam
+authenticated.auditrequest.error.statement.spam = The statement is considered spam

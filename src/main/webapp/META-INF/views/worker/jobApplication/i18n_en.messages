@@ -1,0 +1,19 @@
+worker.jobApplication.list.label.referenceNumber = Reference Number
+worker.jobApplication.list.label.qualifications = Qualifications
+worker.jobApplication.list.label.jobTitle = Job Title
+
+worker.jobApplication.form.label.referenceNumber = Reference Number
+worker.jobApplication.form.label.creationMoment = Moment of creation
+worker.jobApplication.form.label.status = Status
+worker.jobApplication.form.label.statement = Statement
+worker.jobApplication.form.label.skills = Skills
+worker.jobApplication.form.label.qualifications = Qualifications
+worker.jobApplication.form.label.justification = Justification
+worker.job.message.job = See the Job Applied
+
+worker.jobApplication.form.button.return = Return
+worker.jobApplication.form.button.update = Update
+worker.jobApplication.form.button.delete = Delete
+
+worker.jobApplication.error.referenceNumber = The reference number must be unique
+worker.jobApplication.error.status = You can only delete "pending" job applications
