@@ -370,8 +370,8 @@ bg=yellow</panel_attributes>
 Offer
 --
 + title: String {NotBlank}
-+ creation moment: Date {Temporal(TIMESTAP),Past}
-+ deadline: Date {Temporal(TIMESTAP},Future}
++ creation moment: Date {Temporal(TIMESTAMP),Past}
++ deadline: Date {Temporal(TIMESTAMP},Future}
 + text: String {NotBlank}
 + moneyMin: Money {Valid}
 + moneyMax: Money {Valid}
@@ -423,8 +423,8 @@ bg=yellow</panel_attributes>
 Request
 --
 + title: String {NotBlank}
-+ creation moment: Date {Temporal(TIMESTAP),Past}
-+ deadline: Date {Temporal(TIMESTAP}}
++ creation moment: Date {Temporal(TIMESTAMP),Past}
++ deadline: Date {Temporal(TIMESTAMP}}
 + description: String {NotBlank}
 + reward: Money {Valid}
 + ticker: String {NotBlank, Unique, Pattern}
@@ -463,7 +463,7 @@ bg=yellow</panel_attributes>
 Challenge
 --
 + title: String {NotBlank}
-+ deadline: Date {Temporal(TIMESTAP)}
++ deadline: Date {Temporal(TIMESTAMP)}
 + description: String {NotBlank}
 + goalGold: String {NotBlank}
 + goalSilver: String {NotBlank}
@@ -817,7 +817,7 @@ Sponsor
 AuditRecords
 --
 + title: String {NotBlank}
-+ moment: Date {Temporal(TIMESTAP)}
++ moment: Date {Temporal(TIMESTAMP)}
 + status: String {NotBlank}
 + body: String {NotBlank}
 
@@ -838,7 +838,7 @@ Job
 + referenceNumber: String {NotBlank}
 + status: String {NotBlank}
 + title: String {NotBlank}
-+ deadline: Date {Temporal(TIMESTAP)}
++ deadline: Date {Temporal(TIMESTAMP)}
 + salary: Money {NotNull}
 + moreInfo: String {NotBlank,URL}
 + description: String {NotBlank}
@@ -877,7 +877,7 @@ bg=yellow</panel_attributes>
 Job Application
 --
 + referenceNumber: String {NotBlank}
-+ creationMoment: Date {Temporal(TIMESTAP),Past}
++ creationMoment: Date {Temporal(TIMESTAMP),Past}
 + status: String {NotBlank}
 + statement: String {NotBlank}
 + skills: String {NotBlank}
@@ -918,7 +918,7 @@ bg=yellow</panel_attributes>
 Message
 --
 + title: String {NotBlank}
-+ creationMoment: Date {Temporal(TIMESTAP),PAST}
++ creationMoment: Date {Temporal(TIMESTAMP),PAST}
 + tags: String 
 + body: String {NotBlank}
 
