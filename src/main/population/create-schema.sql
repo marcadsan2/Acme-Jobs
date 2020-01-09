@@ -26,7 +26,7 @@
     create table `audit_record` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(255),
+        `body` varchar(1024),
         `moment` datetime(6),
         `status` varchar(255),
         `title` varchar(255),
@@ -286,6 +286,9 @@
         `enabled` bit not null,
         `identity_email` varchar(255),
         `identity_name` varchar(255),
+        `identity_phone_area_code` varchar(255),
+        `identity_phone_country_code` integer,
+        `identity_phone_number` varchar(255),
         `identity_surname` varchar(255),
         `password` varchar(255),
         `username` varchar(255),
@@ -308,10 +311,12 @@
     insert into `hibernate_sequence` values ( 1 );
 create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
 create index IDXrc4ws05g8xybytvf60fgv6o5m on `audit_record` (`moment`);
+create index IDXof878cqun8l1ynh0ao94bw3au on `audit_record` (`status`);
+create index IDX7u6rn1f09a74ihkev0ltgqy1j on `auditor_request` (`status`);
 create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
 create index IDX9pkce3d1y6w47wadap5s5xptc on `company_record` (`stars`);
 create index IDXk2t3uthe649ao1jllcuks0gv4 on `investor_record` (`stars`);
-create index IDXfdmpnr8o4phmk81sqsano16r on `job` (`deadline`);
+create index IDX28ur9xm72oo1df9g14xhnh8h3 on `job` (`status`);
 create index IDXal59yunywnkwi09ps7jxpr18c on `job` (`deadline`, `status`);
 
     alter table `job` 
