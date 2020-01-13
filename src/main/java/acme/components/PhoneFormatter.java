@@ -21,20 +21,19 @@ public class PhoneFormatter implements Formatter<Phone> {
 
 		String result;
 
+		String countryCodeText, areaCodeText, numberText;
+		countryCodeText = String.format("%d", object.getCountryCode());
+		areaCodeText = object.getAreaCode() == null ? " " : String.format(" (%s) ", object.getAreaCode());
+		numberText = String.format("%s", object.getNumber());
+		result = String.format("+%s%s%s", countryCodeText, areaCodeText, numberText);
+
 		/*
-		 * String countryCodeText, areaCodeText, numberText;
-		 * countryCodeText = String.format("+%d", object.getCountryCode());
-		 * areaCodeText = object.getAreaCode() == null ? " " : String.format(" (%d)", object.getAreaCode());
-		 * numberText = String.format("%s", object.getNumber());
-		 * result = String.format("%d %s %d", countryCodeText, areaCodeText, numberText);
+		 * if (object.getAreaCode() != null) {
+		 * result = "+" + object.getCountryCode() + " (" + object.getAreaCode() + ") " + object.getNumber();
+		 * } else {
+		 * result = "+" + object.getCountryCode() + " " + object.getNumber();
+		 * }
 		 */
-
-		if (object.getAreaCode() != null) {
-			result = "+" + object.getCountryCode() + " (" + object.getAreaCode() + ") " + object.getNumber();
-		} else {
-			result = "+" + object.getCountryCode() + " " + object.getNumber();
-		}
-
 		return result;
 	}
 
