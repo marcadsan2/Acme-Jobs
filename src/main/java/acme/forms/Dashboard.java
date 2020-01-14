@@ -17,16 +17,6 @@ public class Dashboard implements Serializable {
 	Integer						totalNumberCompanyRecords;
 	Integer						totalNumberInvestorRecords;
 
-	Double						minRequestReward;
-	Double						maxRequestReward;
-	Double						avgRequestReward;
-	Double						stdRequestReward;
-
-	Double						minOfferReward;
-	Double						maxOfferReward;
-	Double						avgOfferReward;
-	Double						stdOfferReward;
-
 	List<List<String>>			numberOfCompaniesGroupedBySector;
 	List<List<String>>			numberOfInvestorsGroupedBySector;
 

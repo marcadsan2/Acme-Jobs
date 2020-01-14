@@ -10,6 +10,7 @@ worker.jobApplication.form.label.skills = Habilidades
 worker.jobApplication.form.label.qualifications = Titulos
 worker.jobApplication.form.label.justification = Justificación
 worker.job.message.job = Ver el trabajo solicitado
+worker.jobApplication.list.label.status = Estado
 
 worker.jobApplication.form.button.return = Volver
 worker.jobApplication.form.button.update = Actualizar

@@ -226,34 +226,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `offer` (
-       `id` integer not null,
-        `version` integer not null,
-        `creationmoment` datetime(6),
-        `deadline` datetime(6),
-        `money_max_amount` double precision,
-        `money_max_currency` varchar(255),
-        `money_min_amount` double precision,
-        `money_min_currency` varchar(255),
-        `text` varchar(255),
-        `ticker` varchar(255),
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `request` (
-       `id` integer not null,
-        `version` integer not null,
-        `creation_moment` datetime(6),
-        `deadline` datetime(6),
-        `description` varchar(255),
-        `reward_amount` double precision,
-        `reward_currency` varchar(255),
-        `ticker` varchar(255),
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `sponsor` (
        `id` integer not null,
         `version` integer not null,
@@ -307,14 +279,6 @@ create index IDX71m7fwbhckbwa0qnuf1jt8h1k on `job_application` (`status`);
 
     alter table `job_application` 
        add constraint UK_4n3tt315wwa2rf3bav14bdmg1 unique (`reference_number`);
-create index IDXq2o9psuqfuqmq59f0sq57x9uf on `offer` (`deadline`);
-
-    alter table `offer` 
-       add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
-create index IDXlrvsw21ylkdqa1shrkwg1yssx on `request` (`deadline`);
-
-    alter table `request` 
-       add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);

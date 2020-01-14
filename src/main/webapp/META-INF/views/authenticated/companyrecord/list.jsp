@@ -7,4 +7,5 @@
 	<acme:list-column code="autheticated.companyrecord.list.label.name" path="name" width="10%"/>
 	<acme:list-column code="autheticated.companyrecord.list.label.sector" path="sector" width="10%"/>
 	<acme:list-column code="autheticated.companyrecord.list.label.nameCEO" path="nameCEO" width="10%"/>
+	<acme:list-column code="autheticated.companyrecord.list.label.rating" path="stars" width="10%"/>
 </acme:list>

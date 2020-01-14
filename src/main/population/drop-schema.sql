@@ -133,10 +133,6 @@
 
     drop table if exists `non_commercial_banner`;
 
-    drop table if exists `offer`;
-
-    drop table if exists `request`;
-
     drop table if exists `sponsor`;
 
     drop table if exists `user_account`;

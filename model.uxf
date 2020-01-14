@@ -16,18 +16,6 @@ bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1176</x>
-      <y>992</y>
-      <w>776</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-
- Extends</panel_attributes>
-    <additional_attributes>10.0;10.0;950.0;180.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
       <x>512</x>
@@ -71,18 +59,6 @@ bg=blue</panel_attributes>
     <panel_attributes>lt=..
 </panel_attributes>
     <additional_attributes>20.0;50.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1176</x>
-      <y>1032</y>
-      <w>768</w>
-      <h>248</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-
- Extends</panel_attributes>
-    <additional_attributes>10.0;10.0;940.0;290.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -179,36 +155,6 @@ CustomCommand
 
 
 bg=orange</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1936</x>
-      <y>1096</y>
-      <w>160</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Provider
---
-+ company: String {NotBlank}
-+ sector: String {NotBlank}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1928</x>
-      <y>1248</y>
-      <w>168</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Consumer
---
-+ company: String {NotBlank}
-+ sector: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -359,28 +305,6 @@ bg=yellow</panel_attributes>
     <additional_attributes>10.0;2770.0;2920.0;2770.0;2920.0;10.0;2550.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>2944</x>
-      <y>1280</y>
-      <w>304</w>
-      <h>168</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Offer
---
-+ title: String {NotBlank}
-+ creation moment: Date {Temporal(TIMESTAMP),Past}
-+ deadline: Date {Temporal(TIMESTAMP},Future}
-+ text: String {NotBlank}
-+ moneyMin: Money {Valid}
-+ moneyMax: Money {Valid}
-+ ticker: String {NotBlank, Unique, Pattern}
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
       <x>1160</x>
@@ -407,27 +331,6 @@ Announcement
 + moment: Date {Temporal(TIMESTAP),Past}
 + moreInfo: String {URL}
 + text: String {NotBlank}
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>2944</x>
-      <y>1064</y>
-      <w>304</w>
-      <h>168</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Request
---
-+ title: String {NotBlank}
-+ creation moment: Date {Temporal(TIMESTAMP),Past}
-+ deadline: Date {Temporal(TIMESTAMP}}
-+ description: String {NotBlank}
-+ reward: Money {Valid}
-+ ticker: String {NotBlank, Unique, Pattern}
 
 bg=yellow</panel_attributes>
     <additional_attributes/>
@@ -537,47 +440,16 @@ bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1136</x>
-      <y>112</y>
-      <w>280</w>
-      <h>320</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Form&gt;&gt;
-Dashboard
---
-+ totalNumberAnnouncements: Integer
-+ totalNumberCompanyRecords: Integer
-+ totalNumberInvestorRecords: Integer
-
-+ minRequestReward: Double
-+ maxRequestReward: Double
-+ avgRequestReward: Double
-+ stdRequestReward: Double
-
-+ stdRequestReward: Double
-+ stdRequestReward: Double
-+ stdRequestReward: Double
-+ stdRequestReward: Double
-
-+ numberOfCompaniesGroupedBySector: List&lt;String&gt;
-+ numberOfInvestorsGroupedBySector: List&lt;String&gt;
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>1256</x>
+      <x>1088</x>
       <y>16</y>
-      <w>176</w>
-      <h>112</h>
+      <w>344</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
  Implements</panel_attributes>
-    <additional_attributes>200.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>410.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -1231,30 +1103,19 @@ m2=1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1440</x>
-      <y>112</y>
+      <x>1296</x>
+      <y>88</y>
       <w>280</w>
-      <h>320</h>
+      <h>112</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Form&gt;&gt;
 Jobs Dashboard
 --
-+ totalNumberAnnouncements: Integer
-+ totalNumberCompanyRecords: Integer
-+ totalNumberInvestorRecords: Integer
-
-+ minRequestReward: Double
-+ maxRequestReward: Double
-+ avgRequestReward: Double
-+ stdRequestReward: Double
-
-+ stdRequestReward: Double
-+ stdRequestReward: Double
-+ stdRequestReward: Double
-+ stdRequestReward: Double
-
-+ numberOfCompaniesGroupedBySector: List&lt;String&gt;
-+ numberOfInvestorsGroupedBySector: List&lt;String&gt;
++averageNumberOfJobsPerEmployer: Double
++averageNumberOfApplicationsPerEmployer: Double
++averageNumberOfApplicationsPerWorker: Double
++ratioOfJobsPerStatus: List&lt;List&lt;String&gt;&gt;
++ratioOfApplicationsPerStatus: List&lt;List&lt;String&gt;&gt;
 
 bg=yellow</panel_attributes>
     <additional_attributes/>
@@ -1262,14 +1123,14 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1432</x>
+      <x>1416</x>
       <y>16</y>
-      <w>152</w>
-      <h>112</h>
+      <w>88</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
  Implements</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;120.0</additional_attributes>
+    <additional_attributes>30.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1373,34 +1234,6 @@ m2=0..*
     <id>Relation</id>
     <coordinates>
       <x>2264</x>
-      <y>984</y>
-      <w>696</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-x
-m1=1
-m2=0..*
- created by</panel_attributes>
-    <additional_attributes>10.0;10.0;450.0;120.0;850.0;120.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>2264</x>
-      <y>1000</y>
-      <w>696</w>
-      <h>320</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-x
-m1=1
-m2=0..*
- created by</panel_attributes>
-    <additional_attributes>10.0;10.0;400.0;370.0;850.0;370.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>2264</x>
       <y>1024</y>
       <w>696</w>
       <h>568</h>
@@ -1424,34 +1257,6 @@ m1=1
 m2=0..*
  created by</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;410.0;10.0;710.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>2088</x>
-      <y>1288</y>
-      <w>872</w>
-      <h>112</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-x
-m1=1
-m2=0..*
- created by</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0;70.0;110.0;1070.0;110.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>2088</x>
-      <y>1112</y>
-      <w>872</w>
-      <h>96</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-x
-m1=1
-m2=0..*
- created by</panel_attributes>
-    <additional_attributes>10.0;10.0;100.0;10.0;100.0;90.0;1070.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -1545,5 +1350,43 @@ published by
     
 </panel_attributes>
     <additional_attributes>190.0;10.0;10.0;10.0;10.0;1020.0;190.0;1020.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>64</y>
+      <w>280</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Form&gt;&gt;
+Dashboard
+--
++ totalNumberAnnouncements: Integer
++ totalNumberCompanyRecords: Integer
++ totalNumberInvestorRecords: Integer
++ numberOfCompaniesGroupedBySector: List&lt;String&gt;
++ numberOfInvestorsGroupedBySector: List&lt;String&gt;
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1592</x>
+      <y>88</y>
+      <w>280</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Form&gt;&gt;
+Job Applocation Dashboard
+--
+numberOfApplicationsPendingPerDayFromLastFourWeeks: String[][]
+numberOfApplicationsAcceptedPerDayFromLastFourWeeks: String[][]
+numberOfApplicationsRejectedPerDayFromLastFourWeeks: String[][]
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

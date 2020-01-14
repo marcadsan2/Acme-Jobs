@@ -50,11 +50,11 @@
 	
 	<acme:form-submit code="employer.job.form.button.delete" 
 	action="/employer/job/delete"
-	test="${command == 'delete'}"/>
+	test="${command == 'delete' && employer.id == idUser}"/>
 	
 	<acme:form-submit code="employer.job.form.button.delete" 
 	action="/employer/job/delete"
-	test="${command == 'show'}"/>
+	test="${command == 'show' && employer.id == idUser}"/>
 	
 	<acme:form-submit code="employer.job.form.button.publish" 
 	action="/employer/job/publish"
