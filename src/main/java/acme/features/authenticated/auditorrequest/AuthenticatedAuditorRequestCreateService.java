@@ -9,10 +9,13 @@ import acme.entities.customParams.Configuration;
 import acme.entities.roles.Auditor;
 import acme.forms.SpamCheck;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
+import acme.framework.components.Response;
 import acme.framework.entities.Authenticated;
 import acme.framework.entities.Principal;
+import acme.framework.helpers.PrincipalHelper;
 import acme.framework.services.AbstractCreateService;
 
 @Service
@@ -98,6 +101,16 @@ public class AuthenticatedAuditorRequestCreateService implements AbstractCreateS
 		assert entity != null;
 		this.repository.save(entity);
 
+	}
+
+	@Override
+	public void onSuccess(final Request<AuditorRequest> request, final Response<AuditorRequest> response) {
+		assert request != null;
+		assert response != null;
+
+		if (request.isMethod(HttpMethod.POST)) {
+			PrincipalHelper.handleUpdate();
+		}
 	}
 
 }

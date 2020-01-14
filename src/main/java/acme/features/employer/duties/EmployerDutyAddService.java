@@ -38,6 +38,7 @@ public class EmployerDutyAddService implements AbstractCreateService<Employer, D
 		assert entity != null;
 		assert errors != null;
 		request.bind(entity, errors);
+		request.getModel().setAttribute("job", entity.getJob());
 
 	}
 
@@ -46,7 +47,7 @@ public class EmployerDutyAddService implements AbstractCreateService<Employer, D
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "title", "description", "percentage");
+		request.unbind(entity, model, "title", "description", "percentage", "job");
 
 		if (request.isMethod(HttpMethod.GET)) {
 			int idJob = request.getModel().getInteger("idJob");

@@ -37,6 +37,7 @@ public class EmployerDutyUpdateService implements AbstractUpdateService<Employer
 		assert entity != null;
 		assert errors != null;
 		request.bind(entity, errors);
+		request.getModel().setAttribute("job", entity.getJob());
 
 	}
 
@@ -45,7 +46,7 @@ public class EmployerDutyUpdateService implements AbstractUpdateService<Employer
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "title", "description", "percentage");
+		request.unbind(entity, model, "title", "description", "percentage", "job");
 
 	}
 
