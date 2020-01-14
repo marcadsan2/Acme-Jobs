@@ -40,4 +40,4 @@
 	
 </acme:footer-panel>
 
-<img src="${banner.imageurl}" style="margin-right:auto; margin-left:auto;display:block" />
+<a href="${banner.targeturl}"><img src="${banner.imageurl}" style="width:40%;margin-right:auto; margin-left:auto;display:block" /> </a>

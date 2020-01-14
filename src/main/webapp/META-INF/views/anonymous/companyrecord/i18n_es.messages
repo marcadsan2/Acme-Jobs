@@ -7,6 +7,7 @@ anonymous.companyrecord.list.label.phone = Teléfono
 anonymous.companyrecord.list.label.email = Email
 anonymous.companyrecord.list.label.incorporated = INC
 anonymous.companyrecord.list.label.rating = Valoración
+anonymous.companyrecord.list.label.stars = Valoración
 
 anonymous.companyrecord.form.label.name = Nombre
 anonymous.companyrecord.form.label.sector = Sector

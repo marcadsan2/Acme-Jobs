@@ -32,7 +32,7 @@ public class WorkerJobApplicationListMineService implements AbstractListService<
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "referenceNumber", "qualifications", "job.title");
+		request.unbind(entity, model, "referenceNumber", "qualifications", "job.title", "status");
 	}
 
 	@Override

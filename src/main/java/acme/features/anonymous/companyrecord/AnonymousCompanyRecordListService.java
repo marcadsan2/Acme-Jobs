@@ -36,7 +36,7 @@ public class AnonymousCompanyRecordListService implements AbstractListService<An
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "name", "sector", "nameCEO");
+		request.unbind(entity, model, "name", "sector", "nameCEO", "stars");
 	}
 
 	@Override

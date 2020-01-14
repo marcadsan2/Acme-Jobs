@@ -2,8 +2,7 @@
 administrator.investorrecord.list.label.name = Nombre
 administrator.investorrecord.list.label.sector = Sector
 administrator.investorrecord.list.label.statement = Declaración
-anonyadministratormous.investorrecord.list.label.stars = Estrellas
-
+administrator.investorrecord.list.label.stars = Estrellas
 #administrator.investorrecord.form #################################################################
 administrator.investorrecord.form.label.name = Nombre
 administrator.investorrecord.form.label.sector = Sector

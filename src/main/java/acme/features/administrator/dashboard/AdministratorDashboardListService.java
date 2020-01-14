@@ -36,8 +36,7 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalNumberAnnouncements", "totalNumberCompanyRecords", "totalNumberInvestorRecords", "minRequestReward", "maxRequestReward", "avgRequestReward", "stdRequestReward", "minOfferReward", "maxOfferReward",
-			"avgOfferReward", "stdOfferReward", "numberOfCompaniesGroupedBySector", "numberOfInvestorsGroupedBySector");
+		request.unbind(entity, model, "totalNumberAnnouncements", "totalNumberCompanyRecords", "totalNumberInvestorRecords", "numberOfCompaniesGroupedBySector", "numberOfInvestorsGroupedBySector");
 
 	}
 
@@ -51,25 +50,11 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 		Integer totalNumberOfCompanyRecords = this.repository.totalNumberOfCompanyRecords();
 		Integer totalNumberOfInvestorRecords = this.repository.totalNumberOfInvestorRecords();
 
-		Double[][] minMaxAvgStdFromRequests = this.repository.MinMaxAvgStdFromRequests(ldt);
-		Double[][] minMaxAvgStdFromOffers = this.repository.MinMaxAvgStdFromOffers(ldt);
-
 		List<List<String>> companiesBySector = this.repository.getNumberOfCampaniesBySector();
 		List<List<String>> investorsBySector = this.repository.getNumberOfInvestorBySector();
-
 		d.setTotalNumberAnnouncements(totalNumberOfAnnouncements);
 		d.setTotalNumberCompanyRecords(totalNumberOfCompanyRecords);
 		d.setTotalNumberInvestorRecords(totalNumberOfInvestorRecords);
-
-		d.setMinRequestReward(minMaxAvgStdFromRequests[0][0]);
-		d.setMaxRequestReward(minMaxAvgStdFromRequests[0][1]);
-		d.setAvgRequestReward(minMaxAvgStdFromRequests[0][2]);
-		d.setStdRequestReward(minMaxAvgStdFromRequests[0][3]);
-
-		d.setMinOfferReward(minMaxAvgStdFromOffers[0][0]);
-		d.setMaxOfferReward(minMaxAvgStdFromOffers[0][1]);
-		d.setStdOfferReward(minMaxAvgStdFromOffers[0][2]);
-		d.setAvgOfferReward((minMaxAvgStdFromOffers[0][3] + minMaxAvgStdFromOffers[0][4]) / 2);
 
 		d.setNumberOfCompaniesGroupedBySector(companiesBySector);
 		d.setNumberOfInvestorsGroupedBySector(investorsBySector);

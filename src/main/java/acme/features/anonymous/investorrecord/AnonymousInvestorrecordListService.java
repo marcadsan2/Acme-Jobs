@@ -30,7 +30,7 @@ public class AnonymousInvestorrecordListService implements AbstractListService<A
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "name", "sector");
+		request.unbind(entity, model, "name", "sector", "stars");
 
 	}
 
