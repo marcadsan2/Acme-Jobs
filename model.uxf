@@ -21,7 +21,7 @@ bg=yellow</panel_attributes>
       <x>512</x>
       <y>304</y>
       <w>176</w>
-      <h>96</h>
+      <h>104</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Datatype&gt;&gt;
 UserIdentity
@@ -29,6 +29,7 @@ UserIdentity
 + name: String {NotBlank}
 + surname: String {♫NotBlank}
 + email: String {NotBlank, Email}
++ phone: Phone{Valid}
 + / fullName: String {NotBlank}
 
 bg=orange
@@ -1385,6 +1386,41 @@ Job Applocation Dashboard
 numberOfApplicationsPendingPerDayFromLastFourWeeks: String[][]
 numberOfApplicationsAcceptedPerDayFromLastFourWeeks: String[][]
 numberOfApplicationsRejectedPerDayFromLastFourWeeks: String[][]
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>64</x>
+      <y>312</y>
+      <w>176</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
+Money
+--
++ amount: double {Digits(10, 2)}
++ currentcy: String {NotBlank}
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>16</x>
+      <y>40</y>
+      <w>176</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
+Phone
+--
++ countryCode: Integer{MIN(1), MAX(999)}
++ areaCode: String
++ number: String
 
 bg=yellow</panel_attributes>
     <additional_attributes/>
