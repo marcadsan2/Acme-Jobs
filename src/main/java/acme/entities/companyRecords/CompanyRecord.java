@@ -31,7 +31,7 @@ public class CompanyRecord extends DomainEntity {
 	// Attributes ----------------------------------------------------------
 
 	@NotBlank
-	private String				name;
+	private String				nameeeeeeeeeeeeee;
 
 	@NotBlank
 	private String				sector;
