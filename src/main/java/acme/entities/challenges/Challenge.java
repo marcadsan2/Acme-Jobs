@@ -34,7 +34,6 @@ public class Challenge extends DomainEntity {
 	@NotNull	
 	private Date				deadline;
 
-
 	@NotBlank
 	private String				description;
 
